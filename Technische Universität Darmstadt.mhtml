@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+ 	<head>
+		<title>Technische Universität Darmstadt</title>
+		<!--
+			© DATENLOTSEN INFORMATIONSSYSTEME GMBH
+			e-mail: 		info@datenlotsen.de
+			web: 			http://www.datenlotsen.de
+			
+			customer: 		tuda
+			version: 		10.10.001a
+			filename:		head.htm
+		//-->
+		
+					<!-- Other analytics code - e.g. PIWIK, Tag manager instead of Pageview etc. -->
+			
+			
+			
+		
+		<!-- IE document mode -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<meta http-equiv="cache-control" 		content="no-cache" />
+		<meta http-equiv="expires" 				content="-1" />
+		<meta http-equiv="pragma" 				content="no-cache" />
+		<meta http-equiv="Content-Type" 		content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type"	content="text/javascript" />
+		<meta name="referrer" content="origin">
+		<meta name="keywords" content="Datenlotsen,Datenlotsen Informationssysteme GmbH,CampusNet,Campus Management" />
+
+						
+						
+					<link rel="shortcut icon" type="image/x-icon" href="/gfx/tuda/icons/favicon.ico"/>
+				
+		<script src="/js/jquery.js" 	type="text/javascript"></script>
+		<script src="/js/checkDate.js" 	type="text/javascript"></script>
+		<script src="/js/edittext.js" 	type="text/javascript"></script>
+		<script src="/js/skripts.js" 	type="text/javascript"></script>
+		<script src="/js/x.js" 			type="text/javascript"></script>
+
+						
+						
+				
+	
+	<!-- ++++++++++++++++++ DEFAULT STYLESHEETS  ++++++++++++++++++++ -->	
+	<link id="defLayout" 	href="/css/_default/def_layout.css"	rel="stylesheet"  type="text/css"	media="screen" />
+	<link id="defMenu" 		href="/css/_default/def_menu.css" 	rel="stylesheet"  type="text/css"	media="screen" />
+	<link id="defStyles" 	href="/css/_default/def_styles.css"	rel="stylesheet"  type="text/css"	/><!-- no media specified - used for screen AND print -->
+	<link id="pagePrint" 	href="/css/_default/def_print.css" 	rel="stylesheet"  type="text/css"	media="print" />
+			
+			
+			
+			
+	<!-- ++++++++++++++++++ CUSTOM STYLESHEETS  ++++++++++++++++++++ -->	
+	<link id="pageStyle"		href="/css/styles.css"	rel="stylesheet"	type="text/css"  	 />	<!-- no media specified - used for screen AND print -->	
+
+		
+	<link id="pageColors"		href="/css/colors.css"	rel="stylesheet" 	type="text/css" 	media="screen" />
+		
+			
+		<!-- ++++++++++++++++++ MINOR IE FIXES ++++++++++++++++++ -->
+		<!--[if IE 9]>
+			<link id="IE9FIXES" href="/css/_default/IE/fixes_ie9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->		
+		<!--[if lt IE 8]>
+			<link id="IE7FIXES" href="/css/_default/IE/fixes_ie.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+			<link id="IE6FIXES" href="/css/_default/IE/fixes_ie6.css" rel="stylesheet" type="text/css"  media="screen" />
+			<noscript>
+				<link id="IE6FIXESNOSCRIPT" href="/css/_default/IE/fixes_ie6_noScript.css" 	rel="stylesheet" type="text/css"  media="screen" />
+			</noscript>
+		<![endif]-->
+		<!-- ++++++++++++++++++ MENU_CSS FOR HIGHLITING ++++++++++++++++++ -->		
+		
+
+
+
+
+	
+
+	<style type="text/css">
+		#pageTopNavi ul.nav #link000334 a.link000334{
+													background-color:#ffffff;
+
+								}
+								#pageTopNavi ul.nav #link000334 a.link000334,
+		#pageTopNavi ul.nav #link000334 a.link000334 span{
+			color:#99A604;
+							text-decoration:underline;
+						}
+
+		#pageTopNavi ul.nav.depth_1 #link000334{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000334:before{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000334:first-child:before{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000334:after{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000334:last-child:before{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000334:hover{
+			
+		}
+		#pageTopNavi ul.nav #link000334.tree ul.nav{
+			left:0px;
+			height:auto;
+			display:block;
+		}
+				#pageTopNavi ul.nav #link000334.tree .tree ul{
+			height:0;
+		}	
+			</style>
+
+
+
+
+	
+	
+
+	</head>
+	<body>
+
+		
+		
+		<div id="Cn-system-desc">                                                                 </div>
+		<script type="text/javascript">
+		  $(document).ready(function(){
+			var SystemDesc = $.trim($("#Cn-system-desc").text());
+			
+			if(SystemDesc !=''){
+				$("#Cn-system-desc").text(SystemDesc);
+				$("#Cn-system-desc").css('display','block');
+			}
+		  });
+		  			var activateSignCheck = false;
+		  		</script>
+		<div id="acc_pageDescription" class="hidden"><a name="keypadDescription" class="hidden">keypadDescription</a>
+			Für maximale Nutzerfreundlichkeit empfehlen wir, die Ausführung von JavaScript und Cookies zu erlauben.Mithilfe der folgenden Accesskeys können Sie im Portal navigieren:
+			<a href="#mainNavi" accesskey="1">1 Hauptmenü</a>
+			<a href="#mainContent" accesskey="2">2 Inhalt</a>
+			<a href="#keypadDescription" accesskey="3">3 Zurück zu dieser Anleitung</a>
+		</div>
+		<div id="pageContainer" class="pageElementTop">
+			<div class="invAnchor">
+				<a name="top" class="invAnchor"></a>
+			</div>
+			<div id="pageHead" class="pageElementTop">
+				<div id="pageHeadTop" class="pageElementTop">
+					<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000334,-Aimprint" class="img img_arrowImprint pageElementLeft">Impressum</a>
+					<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000334,-Acontact" class="img img_arrowContact pageElementLeft">Kontakt</a>
+					<a href="#" onclick="window.print();" class="img img_arrowPrint pageElementLeft">Drucken</a>
+					<a href="#bottom" class="img img_arrowDown pageElementRight">Zum Ende der Seite</a>
+				</div>
+				<div id="pageHeadCenter" class="pageElementTop">
+					<div id="pageHeadLeft" class="pageElementLeft">
+												<a href="http://www.tu-darmstadt.de" title="extern www.tu-darmstadt.de">
+													<img id="imagePageHeadLeft" src="/gfx/tuda/logo.gif" alt="Logo Technische Universität Darmstadt" />
+						</a>
+					</div>
+								<div id="pageHeadRight" class="pageElementRight">
+						&nbsp;
+					</div>
+				</div>
+								<div id="pageHeadBottom_1" class="pageElementTop">
+					<div id="pageHeadControlsLeft" class="pageElementLeft">
+						<a class="img pageHeadLink" href="#" id="extraNav_link1" alt="Homepage" target="_blank">Homepage</a>
+						<a class="img pageHeadLink" href="#" id="extraNav_link2" alt="standardLink undef" target="_blank">standardLink undef</a>
+					</div>
+					<div id="pageHeadControlsRight" class="pageElementRight">
+						<a class="img" href="#" id="extraNav_link3" alt="standardLink undef" target="_blank">standardLink undef</a>
+						<a class="img" href="#" id="extraNav_link4" alt="standardLink undef" target="_blank">standardLink undef</a>
+						<a class="img" href="#" id="extraNav_link5" alt="&nbsp;" target="_blank">&nbsp;</a>
+					</div>
+				</div>
+				<div id="pageHeadBottom_2" class="pageElementTop">
+					
+					<div id="pageHeadBottom_2sub_1" class="pageElementTop">
+						&nbsp;
+					</div>
+					<div id="pageHeadBottom_2sub_2" class="pageElementTop">
+						&nbsp;
+					</div>
+					&nbsp;
+
+				</div>
+				
+												
+				<div id="pageTopNavi" class="pageElementTop"> <!-- INCLUDING MENU-FILE FOR NAVIGATION-->
+						<a name="mainNavi" class="hidden">&nbsp;</a> <!-- ANCHOR NAVI -->
+							
+<ul class="nav depth_1 linkItemContainer"><li class="intern depth_1 linkItem " title="Startseite" id="link000344"><a  class="depth_1 link000344 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000344,-Awelcome" >Startseite</a></li><li class="tree depth_1 linkItem branchLinkItem " title="Vorlesungsverzeichnis (VV)" id="link000334"><a  class="depth_1 link000334 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ARykwIoAoe25QV72nKSmnPe~eIKBRCEh1ONpCunbzfygB8Slxcja9vHWtJjrgkT2M7meJQ5Hw~V~Ik1CiYMplOjb8zhzZdMDEYSL~IJ5mKiWxUFlx3tWh5gweWapt64HGfWAjElStoPfHj8ou2yypXcBe02tRfwGf5MC-X694JWcdogEXTb6yoHAk2A__" >Vorlesungsverzeichnis (VV)</a><ul class="nav depth_2 linkItemContainer"><li class="intern depth_2 linkItem " title="Lehrveranstaltungssuche" id="link000335"><a  class="depth_2 link000335 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AqcR3uXjYMEQ3bBqIsxITDCMPRpjPBeoYV7HunIRrefwJBISVbWxh9RlAtxbbewZJHUr3z72cHX26drPWPlnOWZmYZD3KG66gFrrhZVkE~BLT0ZmR2smCDsQx2bBnrt0mYhtXlv2C1i70XxLF8J-rKXmBACCK" >Lehrveranstaltungssuche</a></li><li class="intern depth_2 linkItem " title="Raumsuche" id="link000385"><a  class="depth_2 link000385 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=SEARCHROOM&amp;ARGUMENTS=-N000000000000001,-N000385," >Raumsuche</a></li><li class="intern depth_2 linkItem " title="Aktuell - Sommersemester 2020" id="link000610"><a  class="depth_2 link000610 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AnMEHo9Fq~329K5JhM-ztLUGoxEh8clz3woMVIDxu9cDsqJn0oQKh9Onr4ie-I590hSbtK0fM46Zsca1O8H8aVCfqzARNGPiSrqqTrIGvXkUhyd1wv1siDbv3FYhcXuABJKx4Cn4iVl4bXgwRGfsbROP9ElrC2tU2bs0eZxVOXkoQmMLRX0BiFCp8mA__" >Aktuell - Sommersemester 2020</a></li><li class="intern depth_2 linkItem " title="Vorlesungsverzeichnis des  WiSe 2019/20" id="link000601"><a  class="depth_2 link000601 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A-3GTImzZ9gxDzqfRqcQGGeI9G62sWNIQdHhv0~LHz0XGXY04a-f5sZyub3G4YP18VuqZeLhxkxSZug~CQr89TunfrWA05Iz2kFxaEct3605Div6QfcoE3jxdsICz1A8k0xYrb3QrCKNMO8noqDnjQMVXFo6OmxoqVjFhBMEqFULfWQ4XpjbOCosfDw__" >Vorlesungsverzeichnis des  WiSe 2019/20</a></li><li class="intern depth_2 linkItem " title="Vorlesungsverzeichnis des SoSe 2019" id="link000591"><a  class="depth_2 link000591 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AO2pWgJk1hGBhsTy9v08FwS4gvED99Ffq99YoNgcx03XXAVO33iijaWkLmZnygEAD7t3xxo6Q2ddMatdjS1el1oOvUXQGA4ymJq4KEHjNQkJ9Yuqwtbx7jtFEJ-kw7LXFasUv7vGNx9OD7rvWj7e9Li14DJsB8iufu9jFMhm03IUEOdqY1Nb5lBDOaA__" >Vorlesungsverzeichnis des SoSe 2019</a></li><li class="tree depth_2 linkItem branchLinkItem " title="Archiv" id="link000463"><a  class="depth_2 link000463 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000463,-Avvarchivstart%2Ehtml" >Archiv</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Wintersemester 2018/19" id="link000614"><a  class="depth_3 link000614 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AduazpcRwzqiahmXz~4EeIjT9aYIZ6Ul-p1FFBOvIbczop2vH5U2BZqpKEbfNM38MIC5n-2FiwZgRuzap5r6-yfgFHUkuO90rg39xr-cLiVdzvOSTRvauy6niPNyDuCAqczraJbcgtqIolB2dXrLhEESTUeeGC1Wqrr3-nSqKjxW78A2qlG3BHjrEAg__" >Wintersemester 2018/19</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2018" id="link000605"><a  class="depth_3 link000605 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AiGd-MzQZSx31KujGpoFke1ljPBqjsbLNwxNB0SIYePUaKuWzWfC~vEI4ktUhQfm8bry26bTxBTBPaXO7uO6fmHSSKWMKC8mhi4Z9T~yRCHblBLgpRID1D2cei0MhMnONlfXqa0WDrjHm4CTIGDqRQgeXPGTufb2xCaxst9nP-mkTEQOB8B1x3JnUjg__" >Sommersemester 2018</a></li><li class="intern depth_3 linkItem " title="Wintersemester 17/18" id="link000595"><a  class="depth_3 link000595 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ARNICGrxeuEP2f-IHs-Fi~riuuQdwcBzl5SfmXo6tfhbi98GQ7yB~-xezbP55qD9w3dT4O33VQejz7ty2drbJSd-baydBFNc7oPWVWg5P8QI-4loatstjLpD56vBhMSQCqLg~Hx70fEktbPh61EUz7aTg4dnvrCJ9i1cvTij7jvWK9Rs2rYTgrfotiQ__" >Wintersemester 17/18</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2017" id="link000583"><a  class="depth_3 link000583 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A3nQTK4sFi5VOym7OAqksGAvbp9W3FHGPETiS2a0w6LBHHG93DEw1HxQJFXJ1UL7JAKd3-Peig~Umj3mIUJg0D0GO03uSsVstobjOJ5TBZwv7lKSWnI01CpeaGLJGHH6hvW7S319-p72C3GdMnBsbh3nEq7Yn9EhF1INfoAgR174kgnDdjgRvW7VO6w__" >Sommersemester 2017</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2016/17" id="link000576"><a  class="depth_3 link000576 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A0OSs5CAbeXd44R-r9IQbQOElTO1OCoUVqkQsfsihr5VLgz4xkthFTYc8cvtQ~KWJYcIl9Yuz9bLktRRxeLAQ5~gxFuRZkC~45lTzbt4t0MU1QPYTuLVZek792oEhbk-kBjNi1JLMBKOwc8nESxYnExjQgGrZARdM7LHrIn7Kz-CxAbWNc6VpaFL0ng__" >Wintersemester 2016/17</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2016" id="link000567"><a  class="depth_3 link000567 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A1FyVEg-nI-O3qju0e~kdmoihERGySWVsQTK8US5CANuLvRO4EYId7zVrFlnykrcJSm8hZWET~z8i3McGTHqKWnlNevz0pI3-XsKq79wThk4b1YyryqOgOWb-HF9c9yv30aZsCO-5TmgwVG41xy2o~FZ6u1Y~PYyl2D~4ETh6~3zLmqjykn8hhywl9A__" >Sommersemester 2016</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2015/16" id="link000560"><a  class="depth_3 link000560 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AAd3s4B~dxAvosLnq092YPkEmbJyKTU5JH72~PVY-cbqjiWqbR~qNY3syve07NtxJsTlKY85LFDiqmzSpHUr-eXr2wAfjOGr-2sAq1cy-P0YeE7aD-3erpwaIoAlgPoFh-0-KT5zRQruZhMTdgFuiAXrUghNR~lP2~LvdJ4Y8U3RiyMesRF1yJTtL~w__" >Wintersemester 2015/16</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2015" id="link000549"><a  class="depth_3 link000549 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AwVvKwD5BacSLG3ID~rgWO--3-BgRBK6T~r2C63J0RNeopZoGUUQ3APlEQErXa7Up~5VoSVJkZCPbkhCfdC~3PnWvzNuqnGV8flRke8KljZ27yGDctNyy53cIo-Br2xxJur1NNA9olCcIQX9vuLHzzPCgbS6RKo3PoXPPuctSaKNqcmhTYZnBKcpFCw__" >Sommersemester 2015</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2014/15" id="link000547"><a  class="depth_3 link000547 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AYfjUALZC5Y6LyK1viCRAiJ94stDi9O1J4NP9C6nIPJy77o3-UG7uY9DUZtkl3FB30E3IKO4P1ZXdlAxHK-9shZn8TNeGKC0sh~DLRQUvIfarK524-bBmqsNsOXivPnk1SBgpwfVHukSpetNaMFTRffHQCm0kFKabJm8jHGV79F0NYzvhp3xGUw52FQ__" >Wintersemester 2014/15</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2014" id="link000530"><a  class="depth_3 link000530 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AN9Ux4SgUW4-iHP8pgmFrwrqivOOgB072g~9Grri0oTQC1wSxkrFW6cGzmzvV0dwzSJG5Q2MGrKM9phQP01vLG5cCuWAxXMhBu~Uv~VLZEa3Jn4~DiE-aVDSmefvMh21YVO5HYipb99yr8Rh9pZnzwCE3UUMwbZCiaE1t5a5I6eSQ3oyPm96px-MvEA__" >Sommersemester 2014</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2013/14" id="link000504"><a  class="depth_3 link000504 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A2sCRs8h7ZulWXqj3weCgWxNL2RXf9T2iDmeDcBLWr4wXfj3XGpagK2pJq0szE7gu74aFBOn33pEwkPiNMrZVR3X2SY-vSqldRyB32jQkLcPGuiG17fulNH1IKQHjo1hZnpFrv1pMYS6eCDfOPombxbOfnQOtkPNgmQNPYXYsBNomDhb1koIwQyUVgw__" >Wintersemester 2013/14</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2013" id="link000491"><a  class="depth_3 link000491 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AlRWeJsJfKNL56z1~BPvj0KJaiVDOmHjQUcGjtM1bD2lYYOqvKevRN4NBD5-N3vUWunfYw4a-eVUvlZBXUji77Jb4hqJiVMSNuWUmJsCWH1mMmDiE27QrQ3ZO-iZpe1pUUENGzof~Nufqhx9rWR6kru0naYv-JGLPZDsBMMNc~AN0v0K-yATXA1ZgZg__" >Sommersemester 2013</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2012/13" id="link000467"><a  class="depth_3 link000467 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A9csU7kwVGPWtZDZnnMQOmaoEuTJFXjVZGq9WxoiPlQrUQtaEigjkHKPLbbfuPsIhZqhtraGjxlSTNUN1LuYIsShEaPe8Qx5jRBatO8mxrz7UbqmA1fr9~xaPxlwIxBDX1hht~fmSvNxB9Ft~SzPdY9QbLRoiG6-b2KEiK1QolvyWXVGANDzjDKm~aA__" >Wintersemester 2012/13</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2011/12" id="link000469"><a  class="depth_3 link000469 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AgdVCReZdyfKujt3m3-OOcJj1siRRMZc0taqzgsXSMlJ7PK7nOmh1EwZd9Xm9anaAilaVCblJguvFH3g223vadS8XSCuXGO3ol0lTIkWZ3G7KUEcMjXg~XjtJPtezMF98j8T4We1Ks93OuUeGtORrNC41GgPiCU4Hgq~LPob6~M~l0Jx9z2eySGYcjw__" >Wintersemester 2011/12</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2012" id="link000468"><a  class="depth_3 link000468 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AWuLjOqeM0SuOZAs44n7Kggv6QTerg2U~SdZ76QJxUzsoeMpgV3Vn78vxgR5vUqTLU4~TkwQ0X7z4CMPGow3zs8W-kZNtR-BHWj1HgpSj2asl-RIwyrTAUNy7~NStRTtKDBWkAR4HrlRWoNbt25WBhw~Srnm7hCn8Ng9JpVb6Dg4C~jLsv4udt1oAGQ__" >Sommersemester 2012</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2010/11" id="link000471"><a  class="depth_3 link000471 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Ae~r3stcneQo8tlT1Hvcp4-6cqH3dFe5B3hNr2mN8bUtgocOnihDoTsr3HpAtxUn4n5UnRMPSO-RxB0eT7U1nMF4DgYse2xFXMKJ5hyEvZMX5CYMKgTGHTCOhAaih91CBY2DiDopGKywZzKQvWcRL3unJmHSIGP1Z1RYqU0gH6hztQLZ~Lf6rPJoEDw__" >Wintersemester 2010/11</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2011" id="link000470"><a  class="depth_3 link000470 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AevuSVACEW3PkKkYlwyY~c4rfu-glxL9VtE0f3kNCUPrrw1nzJ4zkLnHPQqUlHjX-qDA5tDxtgSMY3mu6qhGE1iOvXbHia~fV3knvvqJi5z8zUgRQAY-dlXp9gVxHX6Ww--siG3Wa8BakkRckR-X68ka4SzRHU2WcWopZGG5p5ryHKIJYdup2osNB5A__" >Sommersemester 2011</a></li><li class="intern depth_3 linkItem " title="Altsysteme" id="link000481"><a  class="depth_3 link000481 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000481,-Avvarchivaltsysteme%2Ehtml" >Altsysteme</a></li></ul></li></ul></li><li class="tree depth_1 linkItem branchLinkItem " title="TUCaN-Account" id="link000410"><a  class="depth_1 link000410 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000410,-Atucan%5Faccount%2Ehtml" >TUCaN-Account</a><ul class="nav depth_2 linkItemContainer"><li class="intern depth_2 linkItem " title="Account anlegen" id="link000425"><a  class="depth_2 link000425 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=CREATEACCOUNT&amp;ARGUMENTS=-N000000000000001,-N000425," >Account anlegen</a></li><li class="intern depth_2 linkItem " title="Passwort vergessen (nur für Bewerber/innen!)" id="link000426"><a  class="depth_2 link000426 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=LOSTPASS&amp;ARGUMENTS=-N000000000000001,-N000426,-A" >Passwort vergessen (nur für Bewerber/innen!)</a></li></ul></li><li class="intern depth_1 linkItem " title="Hilfe" id="link000340"><a  class="depth_1 link000340 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000340,-Ahilfe%2Ehtml" >Hilfe</a></li></ul>
+			
+				</div>
+				<div id="pageHeadBottom_3" class="pageElementTop">
+
+												<div id="pageHeadSwitchLang" class="pageElementRight">
+                          	
+															<a href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=CHANGELANGUAGE&amp;ARGUMENTS=-N000000000000002,-N002" class="img img_LangEnglish pageElementLeft" title="English">English</a>
+							
+														
+														
+																					
+						</div>
+						<form name="cn_loginForm" id="cn_loginForm" action="/scripts/mgrqispi.dll" method="post" class="pageElementRight">
+							<div>
+								<fieldset id="fieldSet_login">
+									<legend>Anmeldung</legend>
+									<div class="formRow nb">
+										<div class="inputFieldLabel">
+											<label for="field_user">TU-ID:</label>
+											<input type="text" id="field_user" name="usrname"  size="15" class="login" maxlength="255" accesskey="n" autofocus />
+										</div>
+										<div class="inputFieldLabel">
+											<label for="field_pass">Passwort:</label>
+											<input type="password" id="field_pass" name="pass"  value="" size="15" class="login" maxlength="255" accesskey="p" />
+										</div>
+									</div>
+								</fieldset>													
+								<input class="img img_arrowSubmit login" type="submit" id="logIn_btn" 					value="Anmelden"       			onclick="return checkform('cn_loginForm','usrname:TU-ID,pass:Passwort','000000000000001');"/>
+																							<!--/login-->
+								<input name="APPNAME" 	type="hidden" value="CampusNet" />
+								<input name="PRGNAME" 	type="hidden" value="LOGINCHECK" />
+								<input name="ARGUMENTS" type="hidden" value="clino,usrname,pass,menuno,menu_type,browser,platform" />
+								<input name="clino" 		type="hidden" value="000000000000001" />
+								<input name="menuno" 		type="hidden" value="000334" />
+								<input name="menu_type" type="hidden" value="classic" />
+								<input name="browser" 	type="hidden" value="" />
+								<input name="platform" 	type="hidden" value="" />													
+							</div>
+						</form>
+									</div>
+			</div>
+			
+			<div id="pageContentContainer" class="pageElementTop">
+				<!-- Anker für Content2 -->		
+				<div id="pageLeft" class="pageElementLeft"> <!-- LEFT COL OF CONTENT -->
+				 	<div id="pageLeftTop"></div>
+				</div>
+				
+				<div id="pageContent" class="pageElementLeft">
+					<a name="mainContent" class="hidden">&nbsp;</a> <!-- ANCHOR MAIN CONTENT -->
+					<div id="pageContentTop" class="pageElementTop">
+											</div>
+					<div id="contentSpacer_IE" class="pageElementTop"><!-- FORCE MIN HEIGHT IN IE<7 -->
+					<!--[if lt IE 7]>
+						<p class="error">
+							Sie verwenden eine Browserversion, die nicht mehr unterstützt wird. Bitte upgraden Sie Ihren Browser auf die aktuelle Version, um funktionale Störungen und Darstellungsprobleme zu vermeiden.
+						</p>
+					<![endif]-->
+							
+					
+<!--
+	© DATENLOTSEN INFORMATIONSSYSTEME GMBH
+	e-mail: 		info@datenlotsen.de
+	web: 			http://www.datenlotsen.de
+	
+	customer: 		tuda
+	version: 		10.10.001a
+	filename:		registration_auditor.htm
+//-->
+
+	<script type="text/javascript"></script>
+
+<h1>Vorlesungsverzeichnis</h1>
+
+
+<!--
+This Template has 3 Parts:
+
+ 1. Navigation(for all)
+ 2. Detailinfomartion auditor registration, Course Catalogue
+ 3. Detailinforamtion directory of stuff and department
+ -->
+
+<!--   1. Navigation(for all) -->
+
+<h2>
+			<a href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AgfsR0zAn4TX8Hfl0xtPbHORz5fEfekbLS6QTnxept-OlwSi6tNqnvGyHM2WkqRyTkuY9vZoWTDteTx~r~EG6d4LSihxSc5tpMhTgtxF1ffzgAzx68mXDFDeV-TVgXWkSYHm69M14eyGGH9m4NhyhX9~c958DY9LSQKo9-on2zqKM2kZiGIVZLfswk2Lur1BLJkUxoj1jKTMnvtM_">Übersicht</a>
+			<a href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AL9ePAj9vr12ioyUYMVAemp6PdBKTWWNgTRNlODclezDdRwm0GbAIZLIT1ExkLJ~~7LepF9f3sj820y3eIzvRAvDDEo25F0rRFmfvio12knvWJB~~U8-N60G~O8~F~Jzvq3WmoiCeXdAJ7eQn2RkHewVlXB33A6KJ5RGmlOwZ97AOK63sW5WtdhIPoEjfzBYwDEbS2RWZzI1WWCk_"></a>
+	</h2>
+
+
+<!--   Bemerkungsfeld des Verzeichnisknotens -->
+	<div class="tb nb">Aufgrund der aktuellen Situation und den damit verbundenen Hygiene- und Abstandsvorgaben mussten einige Prüfungen kurzfristig umgeplant und neu terminiert werden. Auch bereits terminierte Prüfungen können sich nochmals verschieben. Die Planung der Klausurtermine und -räume muss deshalb kontinuierlich aktualisiert werden. Bitte informieren Sie sich regelmäßig in TUCaN über Ihre angemeldeten Klausuren.</div>
+
+
+	<ul class="auditRegistrationList" id="auditRegistration_list">
+									<li title="Alle Orientierungs- und Einführungsveranstaltungen"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-APxbf0Nyd2nZcZ0wb9~cSFLvZQbzj9C33sv77ek9MsayNbC8k71rTfxfiqUFJ8Nkg4obp7JOI4LqpU27PisbIQyraR35qp8Hhu25yZc~v9ZgxYRvD31zDcS-gwnWz-cO~FTIjuE7zPaq~bq~GXt5UHSnlDUJbR1V9vE7JEwrBryOQNHoN6fGFwmxxtdUB425J-amshNYwnc2d2fE_"> Alle Orientierungs- und Einführungsveranstaltungen </a></li>
+												<li title="Courses held in English"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A8M93yyuUSYJRCRf3LIWB0kDH11wy5yy6Wm18eHds7FMsYmHgiQuaLJ0UtFZ46cOQxzk5B21Zy3M8FKs~aGcBZdeEvdIHPRNDcCGhVbKsyOmEffaWPqVNXfnMkUVQdlPtGJzX1hV1qrp2hSIpPt0CJcaS4cYVsU62y0Vo3rNgGr4CP0Chfi-qOn0S7HPawfvrcrIcM2a2TgmJYZA_"> Courses held in English </a></li>
+												<li title="FB01 - Rechts- und Wirtschaftswissenschaften"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A3hTPp8YGji0uauIuEfmBhWRMyYYzASz6YfLrwHYtaF1PNkRqJxrQWrjvr7s~M3Gvs6vPo2yILaHP7lhwAqlzfHHUutRWtQAcOxrOAT1kndZ7jAhBrz4fqwoeMYt32fZWI2udzwLnNfmn-yw2iJCDz~oMmjBiyRReeBuD3WFXRfi1AFnNkrmBAbEIn4Af3o5ASfkZ3oIInTLmddI_"> FB01 - Rechts- und Wirtschaftswissenschaften </a></li>
+												<li title="FB02 - Gesellschafts- und Geschichtswissenschaften"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ABUJw1ixMvg8pxaUt86bDOxpvkW9FHjvBrATse8n3lXvwTDk5mVeMFRtkOBN6pm4lvXUNSLZlA3eZWtHPM5wxRKIZNO9ggz2Z6LcK8nNSCdm0NlifNoTOgPCGBoZVp-hGwOJvjWqA4V31DO9DoUl3WOuBXHGHIXe55Xxz7YCRW0p7ubKsk3yQZ3i2aSvuYz~DucyOHWdiOjIL3dw_"> FB02 - Gesellschafts- und Geschichtswissenschaften </a></li>
+												<li title="FB03 - Humanwissenschaften"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AKzkrCPz1BSdv4HG5-Fr5g0P6Zqjku53CeqPB2TsNsseLtoe4WcAslYt3d7dndeKuidFPH7Z88SmcRcHLz930KvpKj8X-sLI-V781z8l31UFY4d-4MqHCSZJyfilhp0bjganSgGx44v76zfqdkEtNn5nIcV8nC5bEBtv9pnKUJ2dd4qKI88WL6K7btO-HmHhizZ1~3sdlVw8RB2Q_"> FB03 - Humanwissenschaften </a></li>
+												<li title="FB04 - Mathematik"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A1E7QpCcAfEoD66m8oRa27jXxTeB1bmGa32cItcfiUBowwO77~ZmsanoXKYq5X5xvZleOtt-F9RnEMtAL1mnRLreh~C4Id8QbkAHSOJC1KA-RoFBYQxG~ditlPcLsg7Xf8mqybMcdvTbSnd0~JPoFzB5MzEdH-UxXlMYga7mek2gLkRG~o0SrqmEIzeTPWlrbozgGS3PqsTzNPvo_"> FB04 - Mathematik </a></li>
+												<li title="FB05 - Physik"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Aj3NifBM69RbOwBal9-A0VsuH~q4nYJ-FAQ3L9V90VQC~pm~fVoRA8wQAFkYH~w6mMSXJ2AJ4LMDy~y6iCnresTWdCKSdUOtTkYQXm-PIvcE3eUWD2ET4dr759ReFeeJeySBWhkZW8-G-t-45SlJWM3d-8jMQVZ3GYHjQJp2hgO0maiNyLlTXyRNtA2cPEM3NhlBsA-HoHtdg3lE_"> FB05 - Physik </a></li>
+												<li title="FB07 - Chemie"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Ac2T8B-DoFunjKlZXaVMrpM0kwxB27S~p1K0hvu88wmTMBEVhJJagSaSQULHCpChdYssC0NtIOiDsrrRqduC1bclQf6XVrviM6fERn4zn1CURS2638I-UD0R~WBmxq~bz~dtZ6CfG-SY-X5NL0l53RWZawa5iIpxA6pB0hlLsAHMp-hvqKOmIriOt1t6OtIBZseoYNIsfkPBTLxU_"> FB07 - Chemie </a></li>
+												<li title="FB10 - Biologie"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AGBFwsRBTiQ~ENU40Kjleu2J5pa4CQzHWD-BArvC8yp3mR-bkUwzEy-X90sjIqHXo0WAJ-m9fSdcXsr8aPRBO0WpGZ0Icz09o~ha~pfBquj6WLCkplCzQIg5Pm4-HMApK8fynZNvAn9wnLfywdFDVQkcfXCFQlt-NkUpUchR-MTR06ZdkztXlznpFphmJ80bocuX4FOv7BuY3C4c_"> FB10 - Biologie </a></li>
+												<li title="FB11 - Material- und Geowissenschaften"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Aclo5S40JRJAU4bx55tOWn1qQTKl2WRRiTrZ3mB6W35No1ZNKORBuhUS6z3D2jwyk4kHkCWarjviicG~HGf9w98aHVL0P1sGt1XCM91BXaancg3FqZUdYW4xCJe-c3FZIHAWi~2yuFAjhuXKMHvXSWb85cr2cMVgxE-hmDNsfmqUP2a5CdgyDbJt1lZ0gMQSM0JvNUrar5G8Q~Cc_"> FB11 - Material- und Geowissenschaften </a></li>
+												<li title="FB13 - Bau- und Umweltingenieurwissenschaften"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AYAZGztvqDQOZ9EE3b-WwC9qWrdx1xWQ9pctKiJ9qAhXMXY8L-Kyog-~9~r52zmJbQ4h9SwTgRvxCaRYjTYfK432t0L~vOZUceqgwMndn-RXXn091PCCGJM2Vo743WvZcWuNm18B3WA2fK49tPcfNtZwiiOgnrpQBcFRPFAGAStPcdiYBL1xubmsdrPYGhuyikWZxEsACJdRz3pQ_"> FB13 - Bau- und Umweltingenieurwissenschaften </a></li>
+												<li title="FB15 - Architektur"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AGun8Much0jYUtOa5JwpxAEgXTZjYkq34WdPY28YxxsX244RdrIA3T6qEPxpnPZNTH3ldveJoqzOtYjZlL9eZsRfa5jpZP2ISIW5TxAZRgndJNTMCPU3Qh2bHW9uOHWzVXNxFKXCxGG4YytPnuIdXrSJtUCKaAELBFtyShCgiDngdGnrST5ubYkU7T-pfmwPPP0C2qPFq6Qtt46A_"> FB15 - Architektur </a></li>
+												<li title="FB16 - Maschinenbau"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A3XDh3uxv2Z-VmoO6DTpRPoo7x1L3s3WHl6jXe8JuEM9UdjiA9NN9pzboexIW~VmjaeG-tDSFxXopjq8TAgVHYFih9ZQF~jVSaoUa8aWrSMUj0oJ2opzWmdjBcbe2A1bI6JjcsPCVU0ilrtzWr9XeA6yjWnSki3N4yvUm5b8n4ykAvZpEWy-1zNXTJJ-qcDqsooIT9TWEWpY67Ng_"> FB16 - Maschinenbau </a></li>
+												<li title="FB18 - Elektrotechnik und Informationstechnik"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AOPCEsu5lN-86Nq48HevriWT7JTsb2DFPXkLE3Yfg4rUI-dKoTy-q8-jWYBKMH64GxnISH7uMSWX70RfKUEXbCLJ2pTy3UW3JmClW4j~TgNlB0YlCE9GBFXSnPba2-8ZTjrUTh3oJzND4NHVwEJSMTkPKbCTsXRFXuPmxfELyKm4uT~8kobG5TadrwB-TalqSDIr1qHKHi3MofCY_"> FB18 - Elektrotechnik und Informationstechnik </a></li>
+												<li title="FB20 - Informatik"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AQS4Wh-RBiBaf5VcAn~~CFEY4BIKA6zl~2mtXAcsaNoxp~7xwbdto0KBrUL1cm2C01aoDtj3Ea1EKs0tbid4snrh2SNtDSvnXuuaywua6gkoe9cjClh~kJOwaJKbfZRQSX7BLXKTRmrOM~7HFMJdC5HFPySmQMVa2bR-47u016lTOvHdTR8kJzNvDaEec-uUOhKUFQazYZ5kAIjU_"> FB20 - Informatik </a></li>
+												<li title="Sprachenzentrum"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A-CXXtHQl8qKiMuEreGRdXK8w8JujfY47DwEDn2~yORLsUAAQ0Db8-Qr-JQrdVmlLXOf1v8NycmHultZUXUd6GeoeID-mS6JIPKBGwxERd-sEtWywv1g68rRA~4p9QBH7w1AdVxcVD15UW3gBRuVBBVjKmylvIieQ71ScartvWKbSYlHd4ABk1Q35ADUAtdYeS014zbDGCEzJ6F4_"> Sprachenzentrum </a></li>
+												<li title="Studienbereiche"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AQgaZv7~rwtBQ~59dA98Vcq-DU3JIr0EYF2ZwdHPd6ptYQ00BGAuILl6i3mrxnsonHaV6q8do~0mL32eVuz-tUyfaSabowzQz5mq7UY64VVa~Sz22yjowjeeK~XQb~ruwxQ8PmqfVG09Xomhj-o0raWoSG3-3Jb12LzdF2g63GKXSdYDkkE-dmr2N~EXkEBVnV4Vj9MVyh~WyKKE_"> Studienbereiche </a></li>
+												<li title="Institut für Geschichte"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ANq3GR2~eKvtrp-CZupT~L6gQ6CbHpTQmpBKKGkOammgsfqDpshQLGSx7L~v1~sLbuTSKpAk6oDYd8VfR2FH9T9FtkKv9Corin1X6l00y-EDjB4c-lRbdgtYZVKKCm~5nHXzprUm8tNOF~Alr1Mdl82ND4f0cmVDEjFkum~PSFxAFHtdZ1p8Z6aTkpQJgfo-LStPQeqXi6cU5J30_"> Institut für Geschichte </a></li>
+												<li title="Institut für Philosophie"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Aztq6h~98wYGQKLpIrdknfAcKRfaKdJZHy-8fBMSgdoIQmlDLf0iBt9OhlhijjsSqfs9A1fqJ5VZKds2KlOBy7hUeSqe~y2QDNSB0yNMBtJAQ7Em-VAFcXSoJ6UcyMPj4OBPOvxMxuNjqUZGVnBFHWRPCFF7JUKjypE0z7pnp1rL-E-ZJSa6SDjWLs~ZugHyYLQ-q8mRdfQfLErs_"> Institut für Philosophie </a></li>
+												<li title="Institut für Politikwissenschaft"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ATUMzT-5ALGmPu5cOTZzaCtghhWjz4PyfilxSb0QkJiYxzGraguzxNFtA4DUCnDBOEXPm10JUxt6IPtKRlWvIKZC-PzO5NmAFQy~3UpIJtzrcaAVo23V1MpJfNFN~S0GdgpfN-y-ldRKpfVQVD~IX9heY7ZUUJQlRw4Evd1KxI-E6u1FdtDoy6CRwEtfgljB4xgckkPRV1eXMZZc_"> Institut für Politikwissenschaft </a></li>
+												<li title="Institut für Soziologie"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Al~czSnyZ3DFacWNZGXGeosK3ZYcU6rvRqmlhbZ5s-JjauflEmEwoBYigVOzeEwKgDzmVnqOA6QrhLkbC1q-IqzBbcZnx2IKQI9QRQPUoSLHg7w~2TOsnQ5S930GziMCyg4wzfz9SnSCRzHaoXYQuMT5nRmw2Sc2EUlxnPo0L-fIofauNVL04BvaMmN4ygOs2u-cWvjsZT4TYii0_"> Institut für Soziologie </a></li>
+												<li title="Institut für Sprach- und Literaturwissenschaft"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ApXMG1qQVIn3dpYh17OO5gEtNqmbDushT7VvDRwE9bLjsiWDXoOaJhtcu8fpRoTNWY3vou6Tgn4Q6rGMSP-lEI7PSN8YJslRT9IqnLAG40UIRsca0xtSwXu9OSKesZpotcNNNDqZC-bvaRX9C~tw1jp86oyQThinHz6KpeVKgSC-h6MWyjQbWlYF8frjTpWrhKg7mhl19HwdvrA0_"> Institut für Sprach- und Literaturwissenschaft </a></li>
+												<li title="Institut für Theologie und Sozialethik"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AdQiFi1t4KywskrqK5~lDte8fIS8976aXAOQt84pNozD8iTFLEdI0wA0Uv1jq5OC~eGbiIfYS2H~G~eFGZeAsyD-4tM~TSGjiPbyQ8n8qeQYlAvsnMX2AXauvvGYy7CPy-EXFs0bVHJRDpno~7xWd6vZ~lSesuz1KSiJ2gCOQuBElEDMhZ3Vqx~mOELcH5fR944wKP8Sb87QyfwE_"> Institut für Theologie und Sozialethik </a></li>
+												<li title="Öffentliche Veranstaltungen an der TU Darmstadt"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-APgoLsV0DB4QHLLOJLCpInaaZt1HRV3KAku485HkJ3qZ9L-Q54WtSktBVoUuNni6Uy0Khzu0UUvSXh3WgBPWZ6EhG1YuXDq70fWhWhCJ8v~nSkXWWUlvmd0gfxCZZcnwoIQELJ9KxohX9dSE34wAfFFtpUVspLdNpGtrddmUaSSh9biOJ2DraWb2owXlxSc98UlCzQlsW3H-j3CI_"> Öffentliche Veranstaltungen an der TU Darmstadt </a></li>
+												<li title="Raumsperrungen SoSe 2020"><a class="auditRegNodeLink" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AiZQdKb6KfAykLJfu0FV3xHkVdCIh~n~hvJ3b7LQGTX1JM5fWE7rm8cS9ZnhZJXNuad7fzehHwszq1ov3yTyVnMi-knxmoL7oWfYwgPBKvXDjEGcLB6kHKlpj5fDe6tLRi4PQWYi3kIWQ93zuHG5w2ZHU6COtR3UlByAuCR7AJZT~QlZwOitSBs3gqzVeUQ4qTQFgmcshKapH6A0_"> Raumsperrungen SoSe 2020 </a></li>
+						</ul>
+
+
+
+
+		<!--
+			© DATENLOTSEN INFORMATIONSSYSTEME GMBH
+			e-mail: 		info@datenlotsen.de
+			web: 			http://www.datenlotsen.de
+			
+			customer: 		tuda
+			version: 		10.10.001a
+			filename:		foot.htm
+		//-->
+					</div>
+				</div>
+			</div>
+									<div id="pageFoot" class="pageElementTop">
+				<div id="pageFootControls" class="pageElementTop">
+					<div id="pageFootControlsLeft">
+																	<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000334,-Aimprint" class="img img_arrowImprint pageElementLeft" id="pageFootControl_imp">Impressum</a>
+																																									<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N000000000000001,-N000334,-Acontact"  class="img img_arrowContact pageElementLeft" id="pageFootControl_con">Kontakt</a>
+																											<a href="#" onclick="window.print();" class="img img_arrowPrint pageElementLeft" id="pageFootControl_pri">Drucken</a>
+						
+																	</div>
+					<div id="pageFootControlsRight">
+						<a href="#top" class="img img_arrowUp pageElementRight" id="pageFootControl_up">&nbsp;</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="IEdiv">&nbsp;</div><!-- purpose of this is to avoid a pretty strange bug in IE's -->
+
+		<!-- in case the schedule exceeds the given width in lower IE's-->
+		<!--[if lt IE 7]>
+			<script language="JavaScript" type="text/javascript">
+				adjustWidth();
+			</script>
+		<![endif]-->
+
+		<div class="invAnchor">
+			<a name="bottom" class="invAnchor">&nbsp;</a>
+		</div>
+	</body>
+</html>
+	
