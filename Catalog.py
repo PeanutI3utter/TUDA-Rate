@@ -5,7 +5,9 @@ import json
 import sys
 import os
 
+##### do not execute this script if you are not planning to update the module database(the update process takes a long time, approx. 1h 30min)
 
+# if automation does not work try with these links
 wise = [
     "https://www.tucan.tu-darmstadt.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=ACTION&ARGUMENTS=-A3Stya1ZqOhD7glG11H5NFIzuUJEgGfqsnVyXGszxADTWMAOAEO0HufUHzqLlXznlQd~sgIAmOZVNhGmGUcKw6lpHI0oG34STpdUWLEzvswi29QWfZa0mWfY2ByYxS4Qf4wuq0F3juu3vMigDy-LGclFtOBwhKetaie~Lv41x0bZ40o8u88nM6ljutf~g9kr4Hun5rS5ZnB-Pyb4_",
     "https://www.tucan.tu-darmstadt.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=ACTION&ARGUMENTS=-ASEfoAdp-pG4gLG80djNr4ulmQy94ZVjWjmk1anKYfjzf42jGtI5i1RzVfSwtrSRhIFBIZJkct63lD4AG8RZPwexu1Zlu1xjIhBXW0rslZCtxMkabJx5sVLhzI1Urp65OPLnVUuyQP7SH0OiBytSNFG~d8Lgf12n6bdduMmsgw6138Ao315zMYXUqjtV-5pByCr86kWgNvVJYYdM_",
@@ -39,27 +41,53 @@ sose = [
 ]
 
 
-WAIT_INTERVAL = 1 # in seconds
-RESET_INTERVAL = 15
+WAIT_INTERVAL = 1 # Wait interval between each subcategory(not necessairily needed, only in previous version where retry was not implemented[see code])
+RESET_INTERVAL = 15 # wait time when connection was refused after too many https requests
 
 wis = open("WiSe.xml", "w")
 sos = open("SoSe.xml", "w")
 
 
-class Category:
+class CatalogEntry:
+    """
+    interface for an entry in the catalog
+    """
+
+    def traverse(self):
+        pass
+
+
+class Category(CatalogEntry):
+    """
+    A class that represents a category in which modules can be assigned to. Nested Categories are possible.
+
+    init parameters:
+        name  <str>  : name of the category
+        url   <str>  : Url to category website
+        file  <file> : file the data is supposed to dump to
+        depth <int>  : Category depth(the depth of category is calculated by depth of parent category), leave this out, the determination of depth is done automatically
+    """
     def __init__(self, name, url, file, depth = 0):
         self.name = name
         self.url = url
-        self.subcategories = list(pq(url=self.url, encoding='utf-8')('ul').filter('.auditRegistrationList').children())
-        time.sleep(0.5)
+        self.subcategories = list(pq(url=self.url, encoding='utf-8')('ul').filter('.auditRegistrationList').children()) # get all subcategories from website
+        self.subcats = [] # Child Category objects
         mods = pq(url=self.url, encoding='utf-8')('tr').filter(".tbdata")
         mods = mods('a')
-        self.modules = list(mods.items())
-        self.traverseBegun = False
+        self.modules = list(mods.items()) # Links to modules
+        self.mods = [] # Child Module objects
+        self.traverseBegun = False # checks if traversing algorithm was interrupted by connection refused exception
         self.file = file
         self.depth = depth
 
-    def traverse(self):
+    """
+    travese algorithm, retrieves website of each subcategory and recursively calls traverse on subcategory. Adds its own modules to itself.
+
+    parameters:
+    save    <bool> : boolean value whether childern category objects and modules should be saved(for further processing)
+    getData <bool> : true if modules should also save description
+    """
+    def traverse(self, save=False, getData=False):
         try:
             if not self.traverseBegun:
                 print(((self.depth-1) * "|   ") + "|___" + self.name)
@@ -74,13 +102,17 @@ class Category:
                 if ("Raumsperrung" in title) or ("Alle Orientierungs- und Einführungsveranstaltungen" in title) or ("Courses held in English" in title):
                     del self.subcategories[0]
                     continue
-                subsubcat = Category(title, "https://www.tucan.tu-darmstadt.de" + str(pq(subcategory)('a').attr.href), self.file, self.depth+1)
-                subsubcat.traverse()
+                subcat = Category(title, "https://www.tucan.tu-darmstadt.de" + str(pq(subcategory)('a').attr.href), self.file, self.depth+1)
+                subcat.traverse(save)
+                if save:
+                    self.subcats.append(subcat)
                 del self.subcategories[0]
             while len(self.modules) > 0:
                 a = self.modules[0]
                 module = Module(a.text(), "https://www.tucan.tu-darmstadt.de" + str(a.attr.href), self.file, self.depth)
-                module.getDescription()
+                module.traverse(getData)
+                if save:
+                    self.mods.append(module)
                 del self.modules[0]
             self.file.write((self.depth * "\t") + "</Category>\n")
         except:
@@ -90,7 +122,16 @@ class Category:
             self.traverse()
 
 
-class Module:
+class Module(CatalogEntry):
+    """
+    A class representing a module
+
+    init parameters:
+    identifier <str>  : Module identifier retrived from category website
+    url        <str>  : url link to module
+    file       <file> : file in which the module data should be dumped to
+    depth      <int>  : depth of category which holds this module
+    """
     def __init__(self, identifier: str, url, file, depth):
         tokens = identifier.split(' ')
         self.id = tokens[0]
@@ -100,13 +141,13 @@ class Module:
         self.depth = depth
 
 
-    def getDescription(self):
-        """
-        time.sleep(WAIT_INTERVAL)
-        data = pq(url=self.url, encoding='utf-8')('table').filter(lambda i, this: pq(this).attr['class'] == 'tb rw-table rw-all')
-        data = data('tr').eq(1)
-        data = data('td').eq(0)
-        """
+
+    def traverse(self, getData=False):
+        if getData:
+            time.sleep(WAIT_INTERVAL)
+            data = pq(url=self.url, encoding='utf-8')('table').filter(lambda i, this: pq(this).attr['class'] == 'tb rw-table rw-all')
+            data = data('tr').eq(1)
+            data = data('td').eq(0)
         print(((self.depth) * "|   ") + "|" + "___<M> " + self.name)
         self.file.write(((self.depth + 1) * "\t") + "<Module id='" + self.id + "' url='" + self.url + "'>" + self.name.strip() + "</Module>\n")
 
@@ -114,6 +155,9 @@ class Module:
 
 
 class CourseCatalog:
+    """
+    Initiater class to start collecting data
+    """
     def __init__(self):
         wise, sose = getLatestSemester()
         self.subcategories = [wise, sose]
@@ -123,7 +167,9 @@ class CourseCatalog:
             subcat.traverse() 
 
 
-
+"""
+function to get the links to the second latest module archives
+"""
 def getLatestSemester():
     d = pq(url='https://www.tucan.tu-darmstadt.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=EXTERNALPAGES&ARGUMENTS=-N000000000000001,-N000463,-Avvarchivstart%2Ehtml', encoding='utf-8')
     pastsemester = d('li').filter(lambda i, this: pq(this).attr['class'] == "intern depth_3 linkItem ")
