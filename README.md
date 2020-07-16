@@ -16,7 +16,7 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ## Project Motivation<a name="motivation"></a>
 
-we want to collect course reviews from students who have already taken this course, sp we can make our decision whether to take it or not
+We want to collect course reviews from students who have already taken this course, sp we can make our decision whether to take it or not
 
 For this project, we were interested to know: 
 
