@@ -1,7 +1,7 @@
 # TUDA-Rate
 Rating system for modules offered by TU Darmstadt
 
-![logo](logos/logo.png=200px)
+![logo](logos/logo.png =200px)
 
 ### Table of Contents
 
