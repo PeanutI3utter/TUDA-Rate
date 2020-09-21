@@ -1,8 +1,8 @@
 # TUDA-Rate
-Rating system for modules offered by TU Darmstadt
 
 <p align="center">
   <img alt="logo" src="logos/logo.png" width=400 />
+  A free course rating system dedicated for students in TU Darmstadt
 </p>
 
 ### Table of Contents
